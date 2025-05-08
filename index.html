@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Medical Image Captioning</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div style="text-align: center; margin-top: 20px;">
+    <a class="home" href="page1.html">Home</a>
+  </div>
+
+  <div class="container">
+    <h1>🩺 AI Medical Image Captioning</h1>
+    <p class="subtitle">Upload an image, and let AI generate a meaningful medical caption for you.</p>
+
+    <div class="upload-box">
+      <input type="file" id="imageInput" accept="image/*">
+      <button class="upload-btn" onclick="uploadImage()">📤 Upload & Generate</button>
+    </div>
+
+    <h3 id="status"></h3>
+
+    <!-- Result Display: Image & Caption side by side -->
+    <div class="result">
+      <div class="image-box">
+        <img id="preview" style="display: none;" />
+      </div>
+      <div class="caption-box">
+        <p class="caption-text"><strong>Caption:</strong> <span id="caption"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="JS.js"></script>
+</body>
+</html>

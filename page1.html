@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medical Image Caption Generator</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background-image: url("https://static.vecteezy.com/system/resources/previews/037/246/957/large_2x/ai-generated-medical-advertisment-background-with-copy-space-free-photo.jpg");
+      background-size: cover;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    .start-button {
+      padding: 12px 30px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .start-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Medical Image Caption Generator</h1>
+  <button class="start-button" onclick="getStarted()">Get Started</button>
+  <div id="status"></div>
+  <script>
+    function getStarted() {
+      document.getElementById("status").innerText = "Please wait...";
+      setTimeout(() => {
+        document.getElementById("status").innerText = "Starting...";
+        setTimeout(() => {
+          window.location.href = "index.html";
+        }, 1000); 
+      }, 3000); 
+    }
+  </script>
+  
+
+</body>
+</html>
